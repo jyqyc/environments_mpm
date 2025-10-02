@@ -1,3 +1,18 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "envtest"
+version = "0.1.0"
+description = "Demo package for environments lecture"
+requires-python = ">=3.11"
+dependencies = [
+  # For 3.13 support
+  "numpy>=2.1",        
+  "pandas>=2.2.3",
+  "matplotlib>=3.10"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
