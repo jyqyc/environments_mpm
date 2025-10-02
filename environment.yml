@@ -5,7 +5,6 @@ dependencies:
   - python=3.13
   - pip
   - numpy>=2.1
-  - pandas>=2.2.3
   - matplotlib>=3.10
   - pip:
-      - -e . # Install the local package
+      - -e . # install local repo
